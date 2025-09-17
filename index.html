@@ -1,0 +1,62 @@
+<!DOCTYPE html> <!--Define que o documento usa HTML-->
+<html lang="pt-br"> <!--Define o idioma-->
+  <head>
+    <meta charset="UTF-8" /> <!-- Acentos e dxar td organizado -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!-- Faz o site se adaptar ao celular-->
+    <title>Minha Página</title> <!--Nome que aparece na aba-->
+    <link rel="stylesheet" href="styles.css" /> <!--Liga o HTML ao CSS-->
+  </head>
+  
+  <body> <!--Começo do corpo da pg-->
+    <div id="intro" class="intro-page" onclick="goToHome()"> <!--Tela de introdução-->
+        <img id="logointro"
+          src="galeria/logo.png"
+          alt="logo"
+        />
+    </div>
+
+    <div id="home" class="home-page">
+      
+      <header> <!--Logo e menu-->
+       
+        <h1 class="logo">
+         <img id="logo"
+          src="galeria/logo.png"
+          alt="logo"
+          onclick="goToIntro()"
+          />
+        </h1>
+        
+        <nav> <!-- Menu de navegação-->
+          <ul class="menu">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="habilidades.html">Habilidades</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <section class="hero"> <!--Parte principal: texto e imagem-->
+
+        <div class="text">
+         <p>Olá, meu nome é</p>
+         <h2>Brendha Barbosa de Souza</h2>
+         <h3>Sou uma estudante de ads</h3>
+         <button>Ver Projetos</button>
+        </div>
+
+        <div class="image">
+         <img
+          src="galeria/perfil1.jpg"
+          alt="Minha foto"
+        />
+        
+      </section>
+    
+    </div>
+   <script src="script.js" ></script> <!--liga o html ao js-->
+  </body>
+
+  </html>
